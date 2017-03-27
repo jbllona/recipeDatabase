@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+ 
+
+		<script src="jquery-csv.js"></script>
+		<script src="practice.js"></script>
+		<script src="jquery.tablesorter.js"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" id="" media="print, projection, screen">
+	</head>
+	
+	
+	<body>
+		
+		<input id="fileInput" type="file"/>
+		<br>
+		<button onclick="getDataFromFile()">Upload</button>
+		<br><br>
+		<table id="myTable" class="tablesorter"> 
+			<thead> 
+			<tr> 
+			    <th>Name:</th> 
+			    <th>Meal Type:</th> 
+			    <th>Type of Dish:</th> 
+			    <th>Main Ingredient:</th> 
+			    <th>Region:</th> 
+				<th>Source:</th>
+				<th>comments:</th>
+			</tr> 
+			</thead> 
+			<tbody id = "recipeTableBody"> 
+			
+			</tbody> 
+			</table> 
+	</body>
+</html>
